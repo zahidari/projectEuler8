@@ -7,9 +7,43 @@ import java.util.*;
  */
 public class ProjectEuler8 {
 
+    static int func2(int ADJACENT ,String str){
+        
+        //initialize the size of the vecot with ADJACENT length
+        Vector<Integer> vec = new Vector<Integer>(ADJACENT);
+        
+        int strIta = 0;
+        
+        
+        while(strIta < str.length()){
+            int temp = Character.getNumericValue(str.charAt(strIta));
+            
+            if(vec.size() == 13){
+                
+            }
+            vec.add(temp);
+            
+            
+            
+            
+            
+            
+            
+            strIta++;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        return 1;
+    }
     
-    
-   static  void  func(int theLengthOfSearchedAdjacentNumber ,char ch[]){
+   static  void  func(int ADJACENT ,char ch[]){
        
        
        int index = 0; // to iterate
@@ -27,7 +61,7 @@ public class ProjectEuler8 {
        {
            
             // if reached at the end it will end the loop
-            if(theLengthOfSearchedAdjacentNumber + index > ch.length)
+            if(ADJACENT + index > ch.length)
                 break; 
             
             
@@ -36,7 +70,7 @@ public class ProjectEuler8 {
                 continue;
             }*/
 
-            for(int i = 0; i < theLengthOfSearchedAdjacentNumber; i ++)
+            for(int i = 0; i < ADJACENT; i ++)
             {
                 
                 // calculate the multiply of the adjacent numbers
